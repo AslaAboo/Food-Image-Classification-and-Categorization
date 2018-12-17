@@ -21,7 +21,7 @@ import os.path
 from keras.layers import Input
 
 # this could also be the output a different Keras model or layer
-input_tensor = Input(shape=(224, 224, 3))  # this assumes K.image_dim_ordering() == 'tf'
+input_tensor = Input(shape=(299, 299, 3))  # this assumes K.image_dim_ordering() == 'tf'
 
 base_model = InceptionV3(input_tensor=input_tensor, weights='imagenet', include_top=False)
 
@@ -65,7 +65,7 @@ batch_size = 24
 
 # dimensions of our images.
 #Inception input size
-img_width, img_height = 224, 224
+img_width, img_height = 299, 299
 
 # prepare data augmentation configuration
 train_datagen = ImageDataGenerator(
