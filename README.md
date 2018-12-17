@@ -1,1 +1,1 @@
-# Food-Non-food-Image-Classification-and-Food-Categorization-using-Pre-Trained-GoogLeNet-Model
+# Food Image Classification and Categorization using Pre-Trained GoogLeNet Model
